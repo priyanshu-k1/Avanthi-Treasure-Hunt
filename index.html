@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/asserts/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Avanthi's Treasure Hunt</title>
+</head>
+<body>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <main class="shell">
+
+    <header class="topbar">
+      <div class="topbar-logo">
+        <img src="/asserts/logo.png" alt="Avanthi" onerror="this.style.display='none'">
+        <span>AVANTHI PG College(MCA)</span>
+      </div>
+      <div class="topbar-tag">TREASURE HUNT <span class="year">2026</span></div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">// CHALLENGE ACTIVE</p>
+      <h1>Find The<br><em>Treasure</em></h1>
+      <p class="hero-sub">One clue. One code. Can you crack it?</p>
+    </section>
+
+    <div class="card" id="puzzleCard">
+
+      <div class="puzzle-meta">
+        <span class="puzzle-status" id="puzzleStatus">UNSOLVED</span>
+      </div>
+
+      <div class="clue-wrap">
+        <p class="label">CLUE</p>
+        <p class="clue-text" id="clueText"></p>
+      </div>
+
+      <div class="hint-wrap">
+        <button class="hint-toggle" id="hintToggle" aria-expanded="false">
+          <span>⚡</span> Reveal Hint
+        </button>
+        <p class="hint-text" id="hintText" hidden></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="input-group">
+        <label for="answerInput" class="label">YOUR ANSWER</label>
+        <div class="input-row">
+          <input
+            type="text"
+            id="answerInput"
+            placeholder="Enter the answer…"
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button id="submitBtn">
+            <span>Submit</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="feedback" id="feedback" role="alert" aria-live="polite"></div>
+
+    </div>
+
+    <footer class="foot">
+      <p>AVANTHI PG College(MCA) &copy; 2026 &nbsp;·&nbsp; Treasure Hunt Event</p>
+    </footer>
+
+  </main>
+
+  <div id="confetti" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
