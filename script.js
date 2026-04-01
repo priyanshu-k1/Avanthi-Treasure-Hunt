@@ -70,7 +70,7 @@ function typewrite(el, text, speed = 28) {
   setTimeout(tick, 400);
 }
 
-typewrite(clueTextEl,"This word has two parts: \"1)" + activePuzzle.clue + "\"2)The past is always attached at the end.");
+typewrite(clueTextEl,"This word has two parts: 1)" + activePuzzle.clue + "2)The past is always attached at the end.");
 
 // ── Hint toggle ──────────────────────────────────────────────────
 hintToggle.addEventListener("click", () => {
