@@ -52,7 +52,7 @@ const feedbackEl = document.getElementById("feedback");
 const confettiContainer = document.getElementById("confetti");
 
 // ── Render hint ─────────────────────────────────────────────────
-hintTextEl.textContent ="Think in terms of connectivity credentials. " +activePuzzle.hint ;
+hintTextEl.textContent ="Think in terms of connectivity. " +activePuzzle.hint ;
 
 // ── Typewriter effect for clue ───────────────────────────────────
 function typewrite(el, text, speed = 28) {
