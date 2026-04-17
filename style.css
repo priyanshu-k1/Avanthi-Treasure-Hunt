@@ -1,7 +1,5 @@
-/* ── Reset ─────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── Design Tokens ─────────────────────────────────────────────── */
 :root {
   --bg:          #050810;
   --bg2:         #090d1a;
@@ -23,7 +21,6 @@
   --mono:        'JetBrains Mono', monospace;
 }
 
-/* ── Base ──────────────────────────────────────────────────────── */
 html { scroll-behavior: smooth; }
 
 body {
@@ -39,7 +36,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ── Animated grid bg ──────────────────────────────────────────── */
 .bg-grid {
   position: fixed; inset: 0; z-index: 0;
   background-image:
@@ -78,6 +74,7 @@ body {
 /* ── Topbar ────────────────────────────────────────────────────── */
 .topbar {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
@@ -85,16 +82,17 @@ body {
 
 .topbar-logo {
   display: flex; align-items: center; gap: 10px;
+  background-color: pink;
 }
 
 .topbar-logo img {
-  height: 32px; width: auto;
+  height: 30vh; width: 50; object-fit: contain;
   filter: drop-shadow(0 0 6px var(--teal-glow));
 }
 
-.topbar-logo span {
+.topbar span {
   font-family: var(--mono);
-  font-size: 0.65rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.15em;
   color: var(--text-muted);
